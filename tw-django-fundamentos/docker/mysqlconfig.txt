@@ -1,0 +1,3 @@
+
+DANDO PERMISSÃO AO MEU USER:
+  - grant all privileges on *.* to 'willian'@'%' with grant option;
