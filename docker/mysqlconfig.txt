@@ -3,4 +3,5 @@ DANDO PERMISSÃO AO MEU USER:
   - grant all privileges on *.* to 'willian'@'%' with grant option;
 
 ACESSANDO MYSQL DENTRO DO CONTAINER:
+  - mysql -uroot -p
   - mysql -uwillian -p

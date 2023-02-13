@@ -86,7 +86,7 @@ DATABASES = {
         'PORT': 3306,
         'USER': 'willian',
         'PASSWORD': 'will2022',
-        'NAME': 'tw_django_fundamentos',
+        'NAME': 'tw-mysql',
     }
 }
 
