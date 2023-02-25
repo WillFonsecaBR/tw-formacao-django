@@ -12,11 +12,14 @@
 <body>
   <h1>LISTA DE CLIENTES</h1>
   {% for cliente in object_list %}
-    <li>{{ cliente.nome }}</li>
+    <h2>{{ cliente.nome }}</h2>
     <li>{{ cliente.email }}</li>
     <li>{{ cliente.data_aniversario }}</li>
     <li>{{ cliente.profissao }}</li>
+    <li><a href={% url "listar_clientes" pk=cliente.id %}>EXIBIR</a></li>
+    <li><a href={% url "editar_cliente" pk=cliente.id %}>EDITAR</a></li>
+    <li><a href={% url "delete_cliente" pk=cliente.id %}>DELETE</a></li>
     <hr>
-  {% endfor %}  
+  {% endfor %}
 </body>
 </html>
