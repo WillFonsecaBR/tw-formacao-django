@@ -3,13 +3,19 @@ version: '3.5'
 services:
   # SERVIDOR MYSQL
   mysql:
+    deploy:
+      resources:
+        limits:
+          memory: 500m
+        reservations:
+          memory: 500m
     build: 
       context: ./mysql/
     container_name: mysql
     hostname: mysql-server
     ports:
       - 3306:3306
-    restart: always
+    # restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=mysql2023
       - MYSQL_USER=willian
